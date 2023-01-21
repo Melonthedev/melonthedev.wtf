@@ -1,0 +1,10 @@
+# Ey jo? Peter? Bist du's?
+
+User-agent: *
+Disallow: /assets
+Disallow: /pages
+Disallow: /style
+Allow: index.html
+Allow: /projects
+Allow: /archive
+Sitemap: http://melonthedev.wtf/sitemap.xml

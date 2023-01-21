@@ -1,0 +1,392 @@
+/*CSS Document for my Website. BY MELONTHEDEV*/
+
+*{
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(66, 66, 66);
+}
+.light {
+    transition: background-color 0.2s ease;
+    background-color: #dce2e2;
+}
+.dark {
+    transition: background-color 0.2s ease;
+    background-color: #777777;
+}
+body {
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    display: inline-block;
+    font-family: arial;    
+}
+.invisibility {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+.kopf {
+    background-color: #024378;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin-top: -1px;
+}
+.kopf a {
+    color: white;
+    text-decoration: none;
+    font: arial;
+    font-size: 255%;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+.kopflogo {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 57%;
+    color: black;
+}
+.kopflogomenu {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: -50px;
+    height: 20px;
+}
+.kopficon {
+    float: right;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.nav_buttons {
+    background-color: #024378; 
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 71px;
+}
+.nav_buttons a {
+    color: aqua;
+    cursor: alias;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+    text-align: center;
+    font-size: 120%;
+    text-decoration: none;
+    font-family: arial; 
+}
+.nav_buttons a:after {
+    content: '';
+    background: linear-gradient(228deg, #024378 0%, #1a79c7 51%, aqua 100%);
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: opacity 0s ease .15s, -webkit-transform .15s ease-in-out;
+}
+.nav_buttons a:hover:not([disabled])::after {
+  opacity: 1;
+  transition: opacity 0s ease, -webkit-transform .15s ease-in-out;
+  transition: transform .15s ease-in-out, opacity 0s ease;
+  transition: transform .15s ease-in-out, opacity 0s ease, -webkit-transform .15s ease-in-out;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%)
+}
+.nav_buttons span {
+    position: relative;
+    z-index: 1;
+}
+.cookienotiz {
+    float: right;
+    color: black;
+    margin-top: 3px;
+    margin-right: 0px;
+    visibility: hidden;
+}
+.cookieimg {
+    margin-top: -30px;
+    height: 35%;
+    margin-right: 0;
+    visibility: hidden;
+}
+
+.scrolled {
+    visibility: visible;  
+    position: fixed;
+    top: 0px;
+}
+.theme {
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.main {
+    transition: background-color 0.2s ease;
+    background-color: white; 
+    margin-top: 150px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.main p, ul {
+    max-width: 100%;
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 130%;
+    text-align: left;
+}
+.main_night {
+    transition: background-color 0.2s ease;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    margin-top: 150px;
+    margin-left: 9px;
+    margin-right: 9px;
+    
+}
+.main_night p {
+    color: white;
+    max-width: 100%;
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 130%;
+    text-align: left;
+}
+
+.maincontent {
+    max-width: 100%;
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 130%;
+}
+.headding {
+    font-family: serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: -20px;
+}
+.h-m {
+    cursor: pointer;
+}
+.h-s {
+    margin-top: -17px;
+}
+
+.sml {
+    margin-top: -10px;
+}
+.sml a {
+    text-decoration: none;
+    text-align: right;
+}
+
+.feedback {
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+    margin-bottom: 40px;
+    text-shadow: 3px 5px 8px black;
+    
+}
+.feedback:hover {
+    text-shadow: 6px 7px 10px rgb(29, 40, 182);
+    cursor: pointer;
+}
+.feedback:focus {
+    text-shadow: 6px 7px 30px rgb(235, 62, 19);
+    color: red;
+    display: inline;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.feedbackwindow {
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    height: 60%;
+    left: 5%;
+    border-radius: 15px;
+    opacity: 100%;
+    top: 20%;
+}
+.feedbackwindow h1,p,a {
+    text-align: center;
+}
+.feedbackwindow input {
+    margin-left: 20%;
+    background-color: aqua;    
+    padding: 1%;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    margin-bottom: 4px;
+    border-color: black;
+}
+
+.exit {
+    position: fixed;
+    top: 13%;
+    right: 1%;
+    width: 5%;
+    height: 5%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 100px;  
+    background-color: red;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.blur {
+    width: 100%;
+    height: 200%;
+    background-color: black;
+    opacity: 30%;
+    position: fixed;
+    margin-top: -130px;
+    
+}
+
+.üsee {
+    color: red;
+    text-shadow: 3px 3px 2px darkred;
+    size: 200%;
+    text-align: center;
+    background-color: black;
+    opacity: 90%;
+    border-radius: 10px;
+    position: absolute;
+    top: 4%; 
+    width: 100%;
+    position: fixed;
+}
+
+.scrollbar {
+    height: 0%;
+    width: 6px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #024378, #00ffe7);
+}
+.scrollbar:before,
+.scrollbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #024378, #00ffe7);
+    filter: blur(3px);
+}
+@keyframes animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    60% {
+        filter: hue-rotate(40deg);
+    }
+}
+::-webkit-scrollbar {
+    height: 0%;
+    width: 6px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #024378, #00ffe59a);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color:#02437800;
+    height: 1%;
+}
+
+.lang {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(207, 207, 207, 0.856);
+    margin: 0;
+}
+.langbutton {
+    margin-bottom: 20px;
+    background-color: aqua;
+    color: black;
+}
+.lang button:hover {
+    background-color: #024378;
+    color: white;
+}
+.langinfo {
+    margin-top: 10px;
+}
+.langselbutton {
+    width: 270px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    background-color: aqua;
+    font-weight: 600;
+    font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+}
+.langselbutton:hover {
+    transition: background-color 0.4s ease;
+    background-color: #0677d3;
+}
+
+.footertext {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+.footertext a:hover {
+    color: rgb(63, 63, 63)
+}
+.footertextdark a:hover {
+    color: rgb(221, 221, 221)
+}
+.footertextdark p {
+    color: white;
+}
+.footertextdark a {
+    color: white;
+}

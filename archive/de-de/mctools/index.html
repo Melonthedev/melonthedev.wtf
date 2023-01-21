@@ -1,0 +1,126 @@
+<!--PROGRAMMED BY MELONTHEDEV{}-->
+<!DOCTYPE html>
+<html id="doc" class="dark" lang="de">
+    <head>
+        <title id="title">Melonthedev - Wilkommen</title>
+        <!--METADATEN-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINKS-->
+        <link href="/media/ico-border.png" rel="shortcut icon" id="icon" type="image/ico">
+        <link href="/style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
+        
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/navbar-top.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/darkmode.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <!--DIVS-->
+            <div class="menuToggle" id="menuToggle">
+                <div class="menuToggle" id="menuToggle">
+                </div>
+                <input type="checkbox" class="menuicon"/>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <ul class="menu" id="menu">
+                    <img src="/media/logo/logo.svg" alt="Melonthedev" id="kopflogomenu" class="kopflogomenu">
+                    <a href="/archive/de-de/"><li>Home</li></a>
+                    <a style="cursor: pointer;" onclick="document.getElementById('sml').classList.toggle('invisibility')"><li>SocialMedia:</li></a>
+                    <ul id="sml" class="invisibility sml">
+                        <a href="https://youtube.com/channel/UCIF8O-q1TRBYlNDe5ZUGa-A"><li>YouTube</li></a>
+                        <a href="https://Instagram.com/melonthedev"><li>Instagram</li></a>
+                        <a href="https://twitter.com/melonthedev1"><li>Twitter</li></a>
+                        <a href="https://tiktok.com/@melonthedev"><li>TikTok</li></a>
+                        <a onclick="a=confirm('Benutzername: Melonthedev#1848; Möchtest du zu Discord weitergeleitet werden?'); if(a == true) {document.location = 'https://discord.com/'}" style="cursor: pointer;"><li>Discord</li></a>
+                    </ul>
+                    <a href="https://github.com/melonthedev"><li>Github</li></a>
+                    <a href="/archive/de-de/blog/"><li>Blog</li></a>
+                    <a href="/others/discord/"><li>Discordserver</li></a>
+                    <a href="/archive/de-de/about/"><li>Support/About</li></a>
+                    <a href="#"><li>Changelog</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                </ul>
+              </div>
+            <div class="kopf" id="kopf">
+                <img src="/media/logo/logo.svg" alt="Melonthedev" id="kopflogomelon" class="kopflogo" ondblclick="document.getElementById('aquaico').classList.remove('invisibility')">
+                <img src="/media/ico-aqua.png" alt="secretico" class="invisibility" id="aquaico" ondblclick="document.getElementById('aquaico').classList.add('invisibility')" oncontextmenu="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true'">
+                <p class="cookienotiz">Diese Webseite verwendet Cookies. Mehr Infos</p>
+                <img src="media/cookie.svg" alt="cookie" class="cookieimg kopficon">
+                
+                <img src="/media/mond.svg" alt="Mond" class="kopficon theme" id="nacht" onclick="document.getElementById('nacht').classList.add('invisibility');">
+                <img src="/media/sonne.svg" alt="Sonne" class="kopficon invisibility theme" id="tag" onclick="document.getElementById('tag').classList.add('click');">
+            </div>
+            <div class="nav_buttons" id="nav">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+            <div class="nav_buttons invisibility" id="scrollbuttons">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+            <div class="scrollbar" id="scrollbar"></div>
+            <div class="feedbackmenu invisibility" id="fbw">
+                <div class="blur"> </div>
+                <div class="feedbackwindow" id="feedbackwindow">
+                    <h1>Feedback</h1>
+                    <p>Hinterlassen sie ein Feedback:</p>
+                    <input type="text" placeholder="Name(optional)"><br>
+                    <input type="text" placeholder="Feedback" style="padding: 7%; margin-left: 14%;">
+                </div>
+                <div class="exit" onclick="document.getElementById('fbw').classList.toggle('invisibility')"></div>
+            </div>
+            <h1 class="üsee" id="üsee"></h1>
+            <div id="lang" class="lang invisibility">
+                <p class="langinfo invisibility" id="langinfo-fr">On dirait que vous parlez français.</p>
+                <p class="langinfo invisibility" id="langinfo-en">It looks like you speak english.</p>
+                <p class="langinfo invisibility" id="langinfo-de">Es sieht so aus, als sprichst du Deutsch.</p>
+                <button class="langbutton invisibility" id="langbutton-de"  onclick="seite('de-de');">Zur deutschen Seite</button>
+                <button class="langbutton invisibility" id="langbutton-de-2" onclick="document.getElementById('lang').classList.add('invisibility');">Hier Bleiben</button>
+                <button class="langbutton invisibility" id="langbutton-en"  onclick="seite('en-en');">Go to the english website</button>
+                <button class="langbutton invisibility" id="langbutton-en-2" onclick="document.getElementById('lang').classList.add('invisibility');">Stay here</button>
+                <button class="langbutton invisibility" id="langbutton-fr"  onclick="seite('fr-fr');">Aller sur le site français</button>
+                <button class="langbutton invisibility" id="langbutton-fr-2" onclick="document.getElementById('lang').classList.add('invisibility');">Reste ici</button>
+            </div>
+            
+            <!--POPUPS-IFRAMES-WINDOWS-->
+            <!--noch leer xD-->
+        </header>
+
+        <!--MAIN-->
+        <div class="main main_night" id="main">
+            <h1 class="headding h-m" id="mainheadding">Minecraft Tools</h1>
+            <h3 class="headding h-s" id="secondheadding">Nützliche Tools für Minecraft Java</h3>
+
+            <h2 style="text-align: center;">Brauen:</h2>
+            <img src="" alt="Braurezepte">
+            <h2 style="text-align: center;">Enchanten:</h2>
+            <img src="" alt="Enchatmentbeschreibungen">
+            <h2 style="text-align: center;">Traden:</h2>
+            <img src="" alt="Villagertrades">
+            <p></p>
+            <h2 class="feedback"><a class="feedback" onclick="document.getElementById('fbw').classList.toggle('invisibility')">Hinterlassen sie ein Feedback!</a></h2>
+        </div>
+        <!--FOOTER-->
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="/archive/de-de/impressum">Impressum</a> ∣ <a class="footertext" href="/archive/de-de/about">Über mich</a> ∣ ©2020 Melonthedev</p>
+        </footer>
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/eastereggs.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/lang.js"></script>
+        <script>function seite(lang) {document.location = "/" + lang + "/";}</script>
+    </body>
+</html>
+<!--DOCUMENT-ENDE-->

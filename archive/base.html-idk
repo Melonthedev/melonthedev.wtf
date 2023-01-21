@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <title id="title">Melonthedev</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="/assets/media/profile-picture.png">
+        <meta name="description" content="Ultra cool website from Melonthedev">
+        <meta property="fb:app_id" content="Melonthedev">
+        <meta charset="UTF-8">
+        <link href="../media/icon.png" rel="shortcut icon" id="icon" type="image/ico">
+        <link href="../style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">
+        <script src="/assets/scripts/main.js" defer></script>
+        <script src="/assets/scripts/navbar-top.js" defer></script>
+        <script src="/assets/scripts/darkmode.js" defer></script>
+        <script src="/assets/scripts/eastereggs.js" defer></script>
+        <script src="/assets/scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="kopf" id="kopf">
+                <img src="/media/logo/logo.svg" alt="Melonthedev" id="kopflogomelon" class="kopflogo" ondblclick="document.getElementById('aquaico').classList.remove('invisibility')">
+                <img src="/media/ico-aqua.png" alt="secreticon" class="invisibility" id="aquaico" ondblclick="document.getElementById('aquaico').classList.add('invisibility')" oncontextmenu="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true'">
+                <p class="cookienotiz">Diese Webseite verwendet Cookies. Mehr Infos</p>
+                <img src="media/cookie.svg" alt="cookie" class="cookieimg kopficon">                
+                <img src="/media/mond.svg" alt="Mond" class="kopficon theme" id="nacht" onclick="document.getElementById('nacht').classList.add('invisibility');">
+                <img src="/media/sonne.svg" alt="Sonne" class="kopficon invisibility theme" id="tag" onclick="document.getElementById('tag').classList.add('click');">
+            </div>
+            <div class="nav_buttons" id="nav">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>About</span></a>
+            </div>
+            <div class="nav_buttons invisibility" id="scrollbuttons">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>About</span></a>
+            </div>
+            <div class="scrollbar" id="scrollbar"></div>
+            <div class="feedbackmenu invisibility" id="fbw">
+                <div class="blur"></div>
+                <div class="feedbackwindow" id="feedbackwindow">
+                    <h1>Feedback</h1>
+                    <p>Hinterlassen sie ein Feedback:</p>
+                    <input type="text" placeholder="Name(optional)"><br>
+                    <input type="text" placeholder="Feedback" style="padding: 7%; margin-left: 14%;">
+                </div>
+                <div class="exit" onclick="document.getElementById('fbw').classList.toggle('invisibility')"></div>
+            </div>
+            <h1 class="üsee" id="üsee"></h1>
+        </header>
+
+        <!--MAIN-->
+        <div class="main maindark" id="main">
+            <h1 class="headding h-m" id="mainheadding">Melonthedev</h1>
+            <h3 class="headding h-s" id="secondheadding">Just my little website</h3>
+        </div>
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="/impressum">Impressum</a> ∣ <a class="footertext" href="/about">About me</a> ∣ ©2023 Melonthedev</p>
+        </footer>
+    </body>
+</html>

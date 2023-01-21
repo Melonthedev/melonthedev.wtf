@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset your PC</title>
+</head>
+<body>
+    <h1 class="res">Reset this PC</h1>
+    <p  class="res">All ready to go. Make sure that your PC is plugged in.</p>
+    <p  class="res" id="p1">Resetting will:</p>
+    <ul class="res">
+        <li>Remove all apps and programs that didn't come with this PC</li>
+        <li>Change settings back to their defaults</li>
+        <li>Remove Windows and your personal files from this PC</li>
+    </ul>
+    <button class="res button s" type="submit" onclick="reset();">Reset</button>
+    <button class="res button c" type="reset">Cancel</button>
+    <img src="/media/desktop.png" alt="windows 10 desktop" hidden id="desktop">
+    <img src="/media/just-a-moment.gif" alt="just a moment" hidden id="justamoment">
+
+    <script>
+        function reset() {
+            for (const element of document.getElementsByClassName("res")) {
+                element.hidden = true;
+            }
+            document.getElementById("p1").hidden = true;
+            document.getElementById("justamoment").hidden = false;
+            setTimeout(function() {
+                document.getElementById("justamoment").hidden = true;
+                document.getElementById("desktop").hidden = false;
+            }, 10000)
+        }
+    </script>
+    <style>
+        * {
+            background-color: #0078d7;
+            color: white;
+            font-family: 'Sergo-UI';
+            margin: 0px;
+        }
+        .res {
+            margin-left: 150px;
+        }
+        h1 {
+            font-size: 250%;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: larger;
+        }
+        #p1 {
+            margin-bottom: 30px;
+        }
+        .button {
+            background-color: #0078d7;
+            color: white;
+            height: 25px;
+            width: 70px;
+            border: 2.5px solid white;
+            margin-top: 30px;
+        }
+        .button:hover {
+            background-color:#0b91ff;
+        }
+        .button:focus {
+            border: 2.5px dotted white;
+        }
+        .s {
+            margin-left: 600px;
+        }
+        .c {
+            margin-left: 10px;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+        #desktop, #justamoment {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</body>
+</html>

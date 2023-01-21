@@ -1,0 +1,160 @@
+<!--PROGRAMMED BY MELONTHEDEV{}-->
+<!DOCTYPE html>
+<html id="doc" class="dark" lang="de">
+    <head>
+        <title id="title">Melonthedev - Wilkommen</title>
+        <!--METADATEN-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--LINKS-->
+        <link href="/media/ico-border.png" rel="shortcut icon" id="icon" type="image/ico">
+        <link href="/style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/style/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
+        
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/navbar-top.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/darkmode.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <!--DIVS-->
+            <div class="menuToggle" id="menuToggle">
+                <div class="menuToggle" id="menuToggle">
+                </div>
+                <input type="checkbox" class="menuicon"/>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <ul class="menu" id="menu">
+                    <img src="/media/logo/logo.svg" alt="Melonthedev" id="kopflogomenu" class="kopflogomenu">
+                    <a href="/archive/de-de/"><li>Home</li></a>
+                    <a style="cursor: pointer;" onclick="document.getElementById('sml').classList.toggle('invisibility')"><li>SocialMedia:</li></a>
+                    <ul id="sml" class="invisibility sml">
+                        <a href="https://youtube.com/channel/UCIF8O-q1TRBYlNDe5ZUGa-A"><li>YouTube</li></a>
+                        <a href="https://Instagram.com/melonthedev"><li>Instagram</li></a>
+                        <a href="https://twitter.com/melonthedev1"><li>Twitter</li></a>
+                        <a href="https://tiktok.com/@melonthedev"><li>TikTok</li></a>
+                        <a onclick="a=confirm('Benutzername: Melonthedev#1848; Möchtest du zu Discord weitergeleitet werden?'); if(a == true) {document.location = 'https://discord.com/'}" style="cursor: pointer;"><li>Discord</li></a>
+                    </ul>
+                    <a href="https://github.com/melonthedev"><li>Github</li></a>
+                    <a href="/archive/de-de/blog/"><li>Blog</li></a>
+                    <a href="/others/discord/"><li>Discordserver</li></a>
+                    <a href="/archive/de-de/about/"><li>Support/About</li></a>
+                    <a href="#"><li>Changelog</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                </ul>
+              </div>
+            <div class="kopf" id="kopf">
+                <img src="/media/logo/logo.svg" alt="Melonthedev" id="kopflogomelon" class="kopflogo" ondblclick="document.getElementById('aquaico').classList.remove('invisibility')">
+                <img src="/media/ico-aqua.png" alt="secretico" class="invisibility" id="aquaico" ondblclick="document.getElementById('aquaico').classList.add('invisibility')" oncontextmenu="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true'">
+                <p class="cookienotiz">Diese Webseite verwendet Cookies. Mehr Infos</p>
+                <img src="media/cookie.svg" alt="cookie" class="cookieimg kopficon">
+                
+                <img src="/media/mond.svg" alt="Mond" class="kopficon theme" id="nacht" onclick="document.getElementById('nacht').classList.add('invisibility');">
+                <img src="/media/sonne.svg" alt="Sonne" class="kopficon invisibility theme" id="tag" onclick="document.getElementById('tag').classList.add('click');">
+            </div>
+            <div class="nav_buttons" id="nav">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/gallery/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+            <div class="nav_buttons invisibility" id="scrollbuttons">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/gallery/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+            <div class="scrollbar" id="scrollbar"></div>
+            <div class="feedbackmenu invisibility" id="fbw">
+                <div class="blur"> </div>
+                <div class="feedbackwindow" id="feedbackwindow">
+                    <h1>Feedback</h1>
+                    <p>Hinterlassen sie ein Feedback:</p>
+                    <input type="text" placeholder="Name(optional)"><br>
+                    <input type="text" placeholder="Feedback" style="padding: 7%; margin-left: 14%;">
+                </div>
+                <div class="exit" onclick="document.getElementById('fbw').classList.toggle('invisibility')"></div>
+            </div>
+            <h1 class="üsee" id="üsee"></h1>
+            <div id="lang" class="lang invisibility">
+                <p class="langinfo invisibility" id="langinfo-fr">On dirait que vous parlez français.</p>
+                <p class="langinfo invisibility" id="langinfo-en">It looks like you speak english.</p>
+                <p class="langinfo invisibility" id="langinfo-de">Es sieht so aus, als sprichst du Deutsch.</p>
+                <button class="langbutton invisibility" id="langbutton-de"  onclick="seite('de-de');">Zur deutschen Seite</button>
+                <button class="langbutton invisibility" id="langbutton-de-2" onclick="document.getElementById('lang').classList.add('invisibility');">Hier Bleiben</button>
+                <button class="langbutton invisibility" id="langbutton-en"  onclick="seite('en-en');">Go to the english website</button>
+                <button class="langbutton invisibility" id="langbutton-en-2" onclick="document.getElementById('lang').classList.add('invisibility');">Stay here</button>
+                <button class="langbutton invisibility" id="langbutton-fr"  onclick="seite('fr-fr');">Aller sur le site français</button>
+                <button class="langbutton invisibility" id="langbutton-fr-2" onclick="document.getElementById('lang').classList.add('invisibility');">Reste ici</button>
+            </div>
+            
+            <!--POPUPS-IFRAMES-WINDOWS-->
+            <!--noch leer xD-->
+        </header>
+
+        <!--MAIN-->
+        <div class="main main_night" id="main">
+            <h2 class="headding">Sorry, but english isn't avaible yet!</h2>
+            <h1 class="headding h-m" id="mainheadding">DEMOSEITE:</h1>
+            <h3 class="headding h-s" id="secondheadding">Alle anderen Seiten kommen später</h3>
+
+            <img src="/media/schneemann.png" alt="winter update" style="width: 300px; margin-left: calc(50% - 150px);margin-bottom: 30px;">
+            <p id="maincontent">Guten Tag! Dies ist meine Webseite. Falls einige Sachen fehlerhaft sind, werden diese noch überarbeitet. Aber da ich nicht 40 verschiedene Geräte habe, kann es sein, dass Einiges auf anderen Geräten nicht ordnungsgemäß angezeigt wird. In diesem Fall bitte ich sie, in den "Changelog" im unteren Abteil zu schauen. </p>
+            <p>Wenn dort steht "(<i>finish</i>)" und es dennoch falsch angezeigt wird, bitte ich sie mich auf Discord anzuschreiben (<a onclick="alert('Melonthedev#1848');">Hier</a>) oder mir eine E-Mail an <a href="mailto:info.melonthedev@gmail.com" style="text-decoration: none;">info.melonthedev@gmail.com</a> zu senden. Falls die Feedbackfunktion schon funktioniert, können sie natürlich auch diese verwenden.</p>
+            <p>BTW: Diese Webseit wurde mit HTML und CSS sowie JAVASCRIPT gecodet. Es wurden keine anderen Hilfsmittel angewandt. Achso und falls der Cookiebanner noch nicht richtig angezeigt wird, DIESE WEBSEITE BENUTZT COOKIES aber nur für Zwecke wie: Speichern des Themes(Darkmode ist sehr wichtig um Augenkrebs zu vermeiden) und zum Speichern der Browsersprache.</p>
+            <p>Alle Navigationslinks in der Leiste oben, führen bis jetzt immer auf diese "DEMOSEITE". Das wird sich natürlich später noch ändern^^</p>
+            <p>Ich wünsche ihnen noch einen schönen Tag!</p>
+            <p>>>Liebe Grüße Melonthedev.</p>
+            <ul id="maincontent">
+                <h2>CHANGELOG:</h2>
+                
+                <li>Navigations -bar; -buttons; -logo: (<i>finish</i>)</li>
+                <li>Darkmode: (<i>finish</i>)</li>
+                <li>Scrollbar: (<i>finish</i>)</li>
+                <li>Responsive Design(Mobile Ansicht): (<i>beta*</i>)</li>
+                <li>Hamburgermenü: (<i>alpha*</i>)</li>
+                <li>Sprachauswahl und -banner: (<i>alpha*</i>)</li>
+                <li>Cookieinfo: (<i>in progress*</i>)</li>
+                <li>GANZ GANZ viele Eastereggs: (<i>in progress*, 10 vorhanden</i>)</li>
+                <li>Fertige Seiten: (<i>comming soon*</i>)</li>
+                <li>Feedback-Feature: (<i>comming soon*/noch nicht möglich(phpkentnisse notwendig xD)</i>)</li>
+                <li>...</li>
+            </ul>
+            <p>* <i>beta</i>=FERTIG, könnte noch fehler haben; <i>alpha</i>=FERTIG, hat noch ein paar fehler; <i>in progress</i>=in Arbeit; <i>comming soon</i>=bald(kommt bald)</p>
+            <p>-Nach <b>Fertigstellung</b> sortiert.(in progress: Als erstes wird immer das Oberste gemacht)</p>
+            <button onclick="alert('Uff, nicht für DICH! Für jemand anderen!')" style="margin-left: 40%;background: aqua;padding: 1%;">FÜR DICH!</button>
+            <div>
+                <p>Nachfolgender Text ist nur dafür gedacht, scrollbar oder navleiste zu testen:</p>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+                <p>Absatz</p><br>
+            </div>
+            <p></p>
+            <h2 class="feedback"><a class="feedback" onclick="document.getElementById('fbw').classList.toggle('invisibility')">Hinterlassen sie ein Feedback!</a></h2>
+        </div>
+        <!--FOOTER-->
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="/archive/de-de/impressum">Impressum</a> ∣ <a class="footertext" href="/archive/de-de/about">Über mich</a> ∣ ©2020 Melonthedev</p>
+        </footer>
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/eastereggs.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/lang.js"></script>
+        <script>function seite(lang) {document.location = "/" + lang + "/";}</script>
+    </body>
+</html>
+<!--DOCUMENT-ENDE-->

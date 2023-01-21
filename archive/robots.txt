@@ -1,0 +1,8 @@
+# Wow the robots.txt is so beautiful, isn't it? Wait! Why are you here? GO -> melonthedev.wtf/secret.txt
+
+User-agent: *
+Disallow: /media
+Disallow: *
+Allow: /en-us
+Allow: /de-de
+Allow: /fr-fr
