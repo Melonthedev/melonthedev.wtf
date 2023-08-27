@@ -1,0 +1,128 @@
+<!--PROGRAMMED BY MELONTHEDEV{}-->
+<!DOCTYPE html>
+<html id="doc" class="light" lang="en">
+    <head>
+        <title id="title">Melonthedev - Welcome</title>
+        <!--METADATEN-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://www.youtube.com/img/desktop/yt_1200.png">
+        <meta property="fb:app_id" content="LOL">
+        <meta name="description" content="Hallo">
+        <meta name="keywords" content="Ja">
+        <!--LINKS-->
+        <link href="/archive/media/ico-border.png" rel="shortcut icon" id="icon" type="image/ico">
+        <link href="/archive/style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./archive/style/burger.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/archive/style/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./archive/style/style.css" rel="stylesheet" type="text/css" media="all">
+        
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/navbar-top.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/darkmode.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <!--DIVS-->
+            <div class="menuToggle" id="menuToggle">
+                <div class="menuToggle" id="menuToggle">
+                </div>
+                <input type="checkbox" class="menuicon"/>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <span class="menuicon"></span>
+                <ul class="menu" id="menu">
+                    <img src="/archive/media/logo/logo.svg" alt="Melonthedev" id="kopflogomenu" class="kopflogomenu">
+                    <a href="/archive/de-de/"><li>Home</li></a>
+                    <a style="cursor: pointer;" onclick="document.getElementById('sml').classList.toggle('invisibility')"><li>SocialMedia:</li></a>
+                    <ul id="sml" class="invisibility sml">
+                        <a href="https://youtube.com/channel/UCIF8O-q1TRBYlNDe5ZUGa-A"><li>YouTube</li></a>
+                        <a href="https://Instagram.com/melonthedev"><li>Instagram</li></a>
+                        <a href="https://twitter.com/melonthedev1"><li>Twitter</li></a>
+                        <a href="https://tiktok.com/@melonthedev"><li>TikTok</li></a>
+                        <a onclick="a=confirm('Benutzername: Melonthedev#1848; Möchtest du zu Discord weitergeleitet werden?'); if(a == true) {document.location = 'https://discord.com/'}" style="cursor: pointer;"><li>Discord</li></a>
+                    </ul>
+                    <a href="https://github.com/melonthedev"><li>Github</li></a>
+                    <a href="/archive/de-de/blog/"><li>Blog</li></a>
+                    <a href="/others/discord/"><li>Discordserver</li></a>
+                    <a href="/archive/de-de/about/"><li>Support/About</li></a>
+                    <a href="#"><li>Changelog</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                    <a href="#"><li>...</li></a>
+                </ul>
+              </div>
+            <div class="kopf" id="kopf">
+                <img src="/archive/media/logo/logo.svg" alt="Melonthedev" id="kopflogomelon" class="kopflogo" ondblclick="document.getElementById('aquaico').classList.remove('invisibility')">
+                <img src="/archive/media/ico-aqua.png" alt="secreticon" class="invisibility" id="aquaico" ondblclick="document.getElementById('aquaico').classList.add('invisibility')" oncontextmenu="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=true'">
+                <p class="cookienotiz">Diese Webseite verwendet Cookies. Mehr Infos</p>
+                <img src="media/cookie.svg" alt="cookie" class="cookieimg kopficon">                
+                <img src="/archive/media/mond.svg" alt="Mond" class="kopficon theme" id="nacht" onclick="document.getElementById('nacht').classList.add('invisibility');">
+                <img src="/archive/media/sonne.svg" alt="Sonne" class="kopficon invisibility theme" id="tag" onclick="document.getElementById('tag').classList.add('click');">
+            </div>
+            <div class="nav_buttons" id="nav">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>About</span></a>
+            </div>
+            <div class="nav_buttons invisibility" id="scrollbuttons">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/projects/"><span>Projekte</span></a>
+                <a href="/archive/de-de/blog/"><span>Blog</span></a>
+                <a href="/archive/de-de/about/"><span>About</span></a>
+            </div>
+            <div class="scrollbar" id="scrollbar"></div>
+            <div class="feedbackmenu invisibility" id="fbw">
+                <div class="blur"></div>
+                <div class="feedbackwindow" id="feedbackwindow">
+                    <h1>Feedback</h1>
+                    <p>Hinterlassen sie ein Feedback:</p>
+                    <input type="text" placeholder="Name(optional)"><br>
+                    <input type="text" placeholder="Feedback" style="padding: 7%; margin-left: 14%;">
+                </div>
+                <div class="exit" onclick="document.getElementById('fbw').classList.toggle('invisibility')"></div>
+            </div>
+            <h1 class="üsee" id="üsee"></h1>
+            
+            <!--POPUPS-IFRAMES-WINDOWS-->
+            <!--noch leer xD-->
+        </header>
+
+        <!--MAIN-->
+        <div class="main" id="main">
+            <script>
+                lang = navigator.language.split("-")[0];
+                
+                if(lang == "de") {
+                    document.location = "/archive/de-de/";
+                }else if(lang == "en") {
+                    document.location = "/archive/en-us/";
+                }else if(lang == "fr") {
+                    document.location = "/fr-fr/";
+                }
+
+            </script>
+
+            <h1 class="headding h-m" id="mainheadding">Welcome!</h1>
+            <h3 class="headding h-s" id="secondheadding">Please choose a language or enable JAVASCRIPT</h3>
+
+            <p id="maincontent"></p>
+            <button class="langselbutton" onclick="document.location = '/archive/en-us/'">English</button>
+            <button class="langselbutton" onclick="document.location = '/archive/de-de/'">German</button>
+            <button class="langselbutton" onclick="document.location = '/fr-fr/'">French</button>
+            <h2 class="feedback"><a class="feedback" onclick="document.getElementById('fbw').classList.toggle('invisibility')">Give a Feedback!</a></h2>
+        </div>
+        <!--FOOTER-->
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="/archive/de-de/impressum">Impressum</a> ∣ <a class="footertext" href="/archive/de-de/about">About me</a> ∣ ©2020 Melonthedev</p>
+        </footer>
+        <!--SCRIPTE-->
+        <script type="text/javascript" src="/archive/content/scripts/eastereggs.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/main.js"></script>
+        <script type="text/javascript" src="/archive/content/scripts/lang.js"></script>
+        <script>function seite(lang) {document.location = "/" + lang + "/";}</script>
+    </body>
+</html>
+<!--DOCUMENT-ENDE-->

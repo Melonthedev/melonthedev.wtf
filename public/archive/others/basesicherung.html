@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html id="doc" class="light">
+    <script src="/archive/content/scripts/darkmode.js"></script>
+    <script src="/archive/content/scripts/script_1.js"></script>
+    <head>
+        <title id="title"></title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/archive/media/ico.png" rel="shortcut icon" type="image/ico">
+        <link href="/archive/style/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./archive/style/style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <header class="header">
+
+            <script language="javascript" type="text/javascript" src="/archive/content/scripts/navbar-top.js"></script>
+            <script language="javascript" type="text/javascript" src="/archive/content/scripts/darkmode.js"></script>
+            <script language="javascript" type="text/javascript" src="/archive/content/scripts/script_0.js"></script>
+            <script language="javascript" type="text/javascript" src="/archive/content/scripts/menu.js"></script>
+            <script language="javascript" type="text/javascript" src="/archive/content/sitecontents/sitecontent-index-main.js"></script>
+            <div class="cookienotiz">
+                <a href="/archive/de-de/impressum/" style="text-decoration: none;float: right;color: blue;margin-right: 10px;">Weitere Infos</a>
+                <p style="float: right; margin-right: 3px;">Diese Seite verwendet Cookies. </p>
+                <img src="/archive/media/cookie.svg" class="kopficon" style="margin-top: 2px;height: 107%;margin-right: 0;">
+            </div>
+            <div class="kopf" id="kopf">
+                <img src="/archive/media/logo/logo.svg" alt="Melonthedev" class="kopflogo">
+                <img src="/archive/media/menu.svg" alt="menu" class="kopficon" id="menu"> 
+                <img src="/archive/media/mond.svg" alt="Mond" class="kopficon" id="nacht" onclick="document.getElementById('nacht').classList.add('invisibility');" style="position: absolute;right: 40px;z-index: 1;">
+                <img src="/archive/media/sonne.svg" alt="Sonne" class="kopficon invisibility" id="tag" onclick="document.getElementById('tag').classList.add('click');" style="position: absolute;right: 40px;z-index: 1;">
+            </div>
+
+            <div class="nav_buttons" id="nav">  
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/gallery/"><span>Galerie</span></a>
+                <a href="#"><span>Bald</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+            
+            <div class="nav_buttons invisibility" id="scrollbuttons">
+                <a href="/archive/de-de/"><span>Home</span></a>
+                <a href="/archive/de-de/gallery/"><span>Galerie</span></a>
+                <a href="#"><span>BALD!</span></a>
+                <a href="/archive/de-de/about/"><span>Über</span></a>
+            </div>
+
+            <div class="lang" id="lang"><p class="langinfo" id="langinfo"></p><button class="langbutton" id="langbutton" style="margin-bottom: 20px;" onclick=""></button><button class="langbutton" id="langbutton2" style="margin-bottom: 20px;" onclick="document.getElementById('lang').classList.add('invisibility');"></button></div>
+        </header>
+
+        <div class="main" id="main">
+            <h1 class="headding" id="mainheadding"></h1>
+            <h3 style="margin-top: -20px;" class="headding" id="secondheadding"></h3>
+            <p id="maincontent"></p>
+            <p></p>
+            <h2 class="feedback"><a class="feedback" href="/feedback/">Hinterlassen sie ein Feedback!</a></h2>
+        </div>
+
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="/archive/de-de/impressum">Impressum</a> ∣ <a class="footertext" href="/archive/de-de/about">Über mich</a> ∣ ©2020 Melonthedev</p>
+        </footer>
+    </body>
+</html>
+    
+    

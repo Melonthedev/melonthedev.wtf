@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code', 'Roboto Mono', 'Cascadia Mono', 'Comic Sans MS';
+    color: white;
+    color-scheme: dark;
+}
+
+html {
+    background-color: #1e1e1e;
+}
+
+a:hover,
+#navbar a:hover {
+    transition: color 0.2s ease-in-out;
+    transition: font-weight 0.3s ease-in-out;
+    font-weight: 1000;
+    color: #c4c4c4;
+}
+
+/* NAVIGATION */
+
+#navigation {
+    width: 100%;
+    display: flex;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+#navbar li {
+    /* display: inline; */
+    float: left;
+}
+
+#navbar a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#mainnavbutton {
+    font-weight: 1000;
+    font-size: 1.5em;
+    margin-top: -5px;
+    text-shadow: 2px 2px 2px #1e1e1e;
+}
+
+#navicon, #naviconmobile {
+    display: inline-block;
+    padding: 15px 0px 15px 15px;
+    width: 60px;
+    margin-top: -15px;
+    z-index: 10;
+}
+
+#details, #details summary {
+    list-style: none;
+    width: 100%;
+}
+
+#middle {
+    box-shadow: 0px -130px 200px 150px #028574;
+    z-index: -10;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #navbar li {
+        float: none;
+        position: fixed;
+        z-index: 100;
+    }
+
+    #mainnavbutton {
+        position: fixed;
+        top: 0;
+    }
+
+    #mainnavbutton span {
+        display: inline-block;
+        padding-top: 15px;
+    }
+
+    #navigation {
+        z-index: 100;
+    }
+
+    #toggledropdown {
+        display: block;
+        height: 30px;
+        width: 45px;
+        position: fixed;
+        right: 15px;
+        top: 20px;
+        color: white;
+        border-radius: 4px;
+        border: 0.5px solid gray;
+        background-color: #1e1e1e;
+    }
+    
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: white;
+        margin: 3px auto;
+    }
+
+    #details li {
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+    #details {
+        display: block;
+    }
+    #naviconmobile {
+        display: none;
+    }
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* position: absolute; */
+    /* bottom: 20px; */
+}
+
+.footertext {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.footercontainer {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+/* PROJECTS */
+
+.project {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 3px solid aqua;
+    border-radius: 20px;
+    z-index: 0;
+    background-color: #1e1e1ecb;
+}
+
+.projectimage {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.projecttitle {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.projectdescription {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.projectlink {
+    margin-bottom: 30px;
+}
+
+/* CONTENT */
+
+#profileimage {
+    border-radius: 100%;
+    z-index: 0;
+    /* border: 1px solid gray; */
+}
+
+#main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px 1e1e1e;
+    z-index: -10;
+}
+
+#main p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px 1e1e1e;
+}
+
+#name {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px 1e1e1e;
+}
+
+#info {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#links {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html id="doc" class="light">
+    <head>
+        <title id="title"></title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="./media/ico.png" rel="shortcut icon" type="image/ico">
+        <link href="./archive/style/style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <header class="header">
+
+            <script language="javascript" type="text/javascript" src="./archive/content/scripts/navbar-top.js"></script>
+            <script language="javascript" type="text/javascript" src="./archive/content/scripts/navbar-left.js"></script>
+            <script language="javascript" type="text/javascript" src="./archive/content/scripts/darkmode.js"></script>
+            <script language="javascript" type="text/javascript" src="./archive/content/scripts/script_0.js"></script>
+            <div class="kopf">
+                <img src="./media/logo/logo.svg" alt="Melonthedev" class="kopflogo">
+                <img src="./media/menu.svg" alt="menu" class="kopficon" id="menu">
+                <img src="./media/mond.svg" alt="Mond" class="kopficon" id="nacht" >
+                <img src="./media/sonne.svg" alt="Sonne" class="kopficon invisibility" id="tag">
+            </div>
+        </header>
+        <script>
+            window.onload = function weiter() {
+                if(navigator.language.indexOf("de") > -1) {
+                    document.location = "./base.html"
+                    //document.location = "./de-de"
+                }else if(navigator.language.indexOf("en") > -1) {
+                    document.location = "./en-us"
+                }else if(navigator.language.indexOf("fr") > -1) {
+                    document.location = "./fr-fr"
+                }else {
+                    document.location = "./en-us"
+                }
+            }
+            
+        </script>
+        <div class="main" id="main" style="margin-top: 10px;">
+            <h1 class="headding" id="mainheadding"></h1>
+            <h3 style="margin-top: -20px;" class="headding" id="secondheadding">WEITERLEITUNG...</h3>
+            <p>EN: If you see this you have not been redirected and javascript is probatly deactivated in your browser. Please enable it!</p>
+            <p>DE: Wenn du das siehst, wurdest du nicht Weitergeleitet. Überprüfe ob javascript in deinem Browser aktiviert ist.</p>
+            <p></p>
+        </div>
+
+        <footer id="footer">
+            <p class="footertext"><a class="footertext" href="./archive/de-de/impressum">Impressum</a> ∣ <a class="footertext" href="./archive/de-de/about">Über mich</a> ∣ ©2020 Melonthedev</p>
+        </footer>
+    </body>
+</html>
+    
+    
