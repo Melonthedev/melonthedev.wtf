@@ -16,8 +16,17 @@ function App() {
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
   }, []);
+  console.clear();
+  
+  console.log("%cMicrosoft Windows [Version 10.0.19045]\n(c) Microsoft Corporation. Alle Rechte vorbehalten.\n\nC:\\Windows\\System32>exit", "color: white;");
+  console.log("%croot@melonthedev%c:~# %cexit", "color: lime;", "color: mediumblue;", "color: white;");
+  console.log("%c> %cdocument.%clocation%c = %c\"youtu.be/dQw4w9WgXcQ\"", "color: DodgerBlue;", "color: white;", "color: yellow;", "color: white;", "color: salmon;");
+  console.error("Uncaught Error: Cannot rickroll user");
   console.log("%cWelcome to Melonthedev.wtf", "color: aqua; font-size: 200%;text-decoration: underline;");
   console.log("%cand welcome to the console", "color: gray; font-size: 100%;font-weight: bold;");
+  console.log("%c\"hacker\"", "color: red; font-size: 100%;font-weight: bold;font-style: italic;");
+  console.log('%c🍆', 'font-weight:bold; font-size:50px;');
+
   return (
     <Particles
             id="tsparticles"
